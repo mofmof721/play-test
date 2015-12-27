@@ -10,7 +10,8 @@ libraryDependencies ++= Seq(
   evolutions,
   javaJdbc,
   cache,
-  javaWs
+  javaWs,
+  "mysql" % "mysql-connector-java" % "5.1.20"
 )
 
 // Play provides two styles of routers, one expects its actions to be injected, the

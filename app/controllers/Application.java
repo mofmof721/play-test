@@ -1,14 +1,33 @@
 package controllers;
 
-import play.*;
-import play.mvc.*;
+import java.util.List;
 
-import views.html.*;
+import models.UserMaster;
+import play.mvc.Controller;
+import play.mvc.Result;
 
+import views.html.index;
+
+/**
+ * コントローラークラス
+ *
+ */
 public class Application extends Controller {
 
-    public Result index() {
-        return ok(index.render("Your new application is ready."));
-    }
+	/**
+	 * index画面アクセス時処理
+	 *
+	 * @return 処理結果
+	 */
+	public Result index() {
+		// ユーザーマスタを検索する
+		List<UserMaster> userMasterList = UserMaster.getFind().all();
+		for (UserMaster data : userMasterList) {
+			// 利用者名を出力する
+			System.out.println(data.getUserName());
+		}
+		// index画面を表示する
+		return ok(index.render("Your new application is ready."));
+	}
 
 }

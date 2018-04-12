@@ -55,3 +55,6 @@ target
 /.project
 /.settings
 /RUNNING_PID
+*.log
+.sbtserver/connections/activator-09b01e18-8693-449c-9193-67f9ad04d423.log.01
+.sbtserver/connections/activator-5ca210b7-9a37-45d2-8ab9-8cd1df45d3dd.log.01

@@ -1,8 +1,13 @@
-New log file opened at Sat Dec 26 21:44:21 JST 2015 by 792@arisa-PC
-Taking next connection to: 52595
-New client attempting to connect on port: 52596-52595
-  Address = /192.168.1.20:52595
-Handshake exception on socket: 52596
+New log file opened at Fri Apr 13 00:38:17 JST 2018 by 7920@DESKTOP-T0LF51G
+Taking next connection to: 62257
+New client attempting to connect on port: 62258-62257
+  Address = /192.168.1.18:62257
+This client on port 62258 has uuid 5ca210b7-9a37-45d2-8ab9-8cd1df45d3dd configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-5ca210b7-9a37-45d2-8ab9-8cd1df45d3dd
+Taking next connection to: 62257
+New client attempting to connect on port: 62259-62257
+  Address = /192.168.1.18:62257
+Handshake exception on socket: 62259
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -10,7 +15,7 @@ sbt.impl.ipc.HandshakeException: Unable to perform handshake
 Caused by: java.net.SocketException: Software caused connection abort: recv failed
 	at java.net.SocketInputStream.socketRead0(Native Method)
 	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
-	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
 	at java.net.SocketInputStream.read(SocketInputStream.java:141)
 	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
 	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
@@ -18,4 +23,39 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 52595
+Taking next connection to: 62257
+New client attempting to connect on port: 62260-62257
+  Address = /192.168.1.18:62257
+This client on port 62260 has uuid 09b01e18-8693-449c-9193-67f9ad04d423 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-5ca210b7-9a37-45d2-8ab9-8cd1df45d3dd, activator-09b01e18-8693-449c-9193-67f9ad04d423
+Taking next connection to: 62257
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 62257
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 62257
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 62257
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 62257
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 62257
+Checking to see if clients are empty...
+We have 2 non-daemon clients, continuing serving connections.
+Taking next connection to: 62257
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 62257
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 62257
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 7920@DESKTOP-T0LF51G logs at Fri Apr 13 01:05:20 JST 2018, goodbye.
